@@ -36,10 +36,11 @@ Challenges within each section are meant to be solved in order.
 1.  List the files with a particular extension, like `ls /MakeSchool/CoreA/Core-Unix-Utilities/Animals/*.txt`
 1.  List the files in a subdirectory, like `ls -R`
 1.  Navigate to a subdirectory, like `cd /project`
-1.  Navigate to the parent directory of your working directory
-1.  Navigate to a nested subdirectory, like `path/to/project`
-1.  Navigate to your home directory
+1.  Navigate to the parent directory of your working directory `cd -P` or `cd /`
+1.  Navigate to a nested subdirectory, like ` cd path/to/project`
+1.  Navigate to your home directory `cd ~`
 1.  Navigate back to the previous directory
+`cd ..`
 
 ### Variables
 
