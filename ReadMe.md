@@ -33,49 +33,81 @@ Challenges within each section are meant to be solved in order.
     `pwd`
 1.  List the files in your working directory
     `ls`
-1.  List the files with a particular extension, like `ls /MakeSchool/CoreA/Core-Unix-Utilities/Animals/*.txt`
-1.  List the files in a subdirectory, like `ls -R`
-1.  Navigate to a subdirectory, like `cd /project`
-1.  Navigate to the parent directory of your working directory `cd -P` or `cd /`
-1.  Navigate to a nested subdirectory, like ` cd path/to/project`
-1.  Navigate to your home directory `cd ~`
-1.  Navigate back to the previous directory
-`cd ..`
+1.  List the files with a particular extension, like
+    `ls *.txt`
+1.  List the files in a subdirectory, like
+    `ls Animals/`
+1.  Navigate to a subdirectory, like
+    `cd /Animals`
+1.  Navigate to the parent directory of your working directory
+    `cd -P` or `cd ..`
+1.  Navigate to a nested subdirectory, like
+    `cd path/to/project`
+1.  Navigate to your home directory
+    `cd ~`
+1.  Navigate back to the previous directory. To Undo
+    `cd -`
 
 ### Variables
 
 1.  Print a sentence, like `Hello world`
+    `echo 'Hello World'`
 1.  Print a variable value, like `$USER` or `$PATH`
+    `echo $USER` or `echo $PATH`
 1.  Set a variable `NAME` equal to your first name, then print its value
+    `NAME=jake` and `echo $NAME`
 1.  Set a variable `FULL_NAME` equal to your full name, then print its value
+    `FULL_NAME="Jake Tran"` and `echo $FULL_NAME`
 1.  Print all environment variables (names and values)
+    `printenv`
 1.  Make an alias named `hello` that prints `Hello world`
+    `alias hello="echo Hello World"`
 1.  Make an alias named `gocode` that navigates to your code directory
+    `alias gocode='cd Desktop/MakeSchool'`
 1.  Print all aliases (names and values)
+    `echo $alias`
+
+    Use Bash-Profiles to set alias
 
 ### Getting Help
 
 1.  Print what options a command accepts, like `bash` or `python`
+    `Which python`
 1.  Read the manual for a command, like `echo` or `ls`
 1.  Print the file path to a command, like `bash` or `python`
 
 ### Files
 
 1.  Navigate to the directory `Animals`
+    `cd Animals/``
 1.  Print the contents of the file `Cats.txt`
+    `cat Cats.txt`
 1.  Print the contents of both files `Cats.txt` and `Dogs.txt`
+    `cat Cats.txt Dogs.txt`
 1.  Count the words in the file `Cats.txt`
+    `wc Cats.txt`
 1.  Count the words in all files with the extension `.txt`
+    `wc *.txt`
 1.  Copy the file `Dogs.txt` to a new file `BabyDogs.txt`
+    `cp Dogs.txt Babydogs.txt`
 1.  Rename the file `BabyDogs.txt` to `Puppies.txt`
+    `mv BabyDogs.txt Puppies.txt`
 1.  Make a new directory named `Shelter` inside `Animals`
+    `mkdir Shelter`
 1.  Move the file `Puppies.txt` into the directory `Shelter`
+    `mv Puppies.txt Shelter/`
 1.  Copy the file `Cats.txt` to `Kittens.txt` inside `Shelter`
+    `cat Cats.txt > Shelter/Kittens.txt` or `cp Cats.txt Shelter/Kittens.txt`
 1.  List the files within the directory `Shelter`
+    `ls Shelter/`
 1.  Count the words in all `.txt` files inside `Shelter`
+    `wc Shelter/*.txt`
 1.  Try to remove the directory `Shelter` (this should fail)
+    `rmdir Shelter`
 1.  Remove all `.txt` files inside `Shelter`
+    `rm Shelter/*.txt`
 1.  Remove the directory `Shelter` (this should succeed)
+    `rm -d Shelter`
 1.  Now cry because you just deleted those poor tiny animals
 
 ### Permissions
@@ -128,3 +160,8 @@ Challenges within each section are meant to be solved in order.
 1.  Count the lines and words in all source code files
 1.  Find all U.S. zip codes in a file containing addresses
 1.  Find all U.S. zip codes in a file containing addresses
+
+
+
+Modified Files permissions:
+FILE permissions can be modified with `chmod`
