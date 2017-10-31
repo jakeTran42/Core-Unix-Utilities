@@ -165,3 +165,5 @@ Challenges within each section are meant to be solved in order.
 
 Modified Files permissions:
 FILE permissions can be modified with `chmod`
+
+#Add Cat here
